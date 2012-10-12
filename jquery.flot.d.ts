@@ -13,7 +13,7 @@ module jquery.flot {
         interfaction?: interaction;
         hooks?: hooks;
     }
-    // { (bool): void; }
+
     interface hooks {
         processOptions: { (plot: plot, options: plotOptions): void; } [];
         processRawData: { (plot: plot, series: dataSeries, data: any[], datapoints: datapoints): void; }[];
@@ -86,8 +86,6 @@ module jquery.flot {
     interface axisOptions {
         show?: bool;            // null or true/false
         position?: string;      // "bottom" or "top" or "left" or "right"
-        //mode: null or "time" ("time" requires jquery.flot.time.js plugin)
-        //timezone: null, "browser" or timezone (only makes sense for mode: "time")
 
         color?: any;            // null or color spec
         tickColor?: any;        // null or color spec
@@ -164,10 +162,6 @@ module jquery.flot {
         defaultValue?: number;
     }
 
-    //interface series extends seriesOptions {
-
-    //}
-
     interface point {
         x: number;
         y: number;
@@ -219,7 +213,3 @@ interface JQueryStatic {
     plot(placeholder: JQuery, data: jquery.flot.dataSeries[], options?: jquery.flot.plotOptions): jquery.flot.plot;
     plot(placeholder: JQuery, data: any[], options?: jquery.flot.plotOptions): jquery.flot.plot;
 }
-//}
-
-//declare var jQuery: jquery.flot.JQueryStatic;
-//declare var $: jquery.flot.JQueryStatic;
