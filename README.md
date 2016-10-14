@@ -1,3 +1,7 @@
-##Flot TypeScript Ambient Definations
+## TypeScript Ambient Definitions for Flot
+
 ===========
-Ambient Definations for using TypeScript in Flot.
+
+These are ambient definitions for using the
+[Flot](http://www.flotcharts.org/) charting library in
+[TypeScript](http://www.typescriptlang.org/) code.
